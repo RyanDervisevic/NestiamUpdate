@@ -4,28 +4,28 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-
 import { CarouselModule } from 'ngx-owl-carousel-o';
-
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { MovieListComponent } from './movie-list/movie-list.component';
-import { CarouselHolderComponent } from './movie-list/carousel-holder.component';
 import { MoviesService } from './services/movies.service';
 import { AppRoutingModule } from './app-routing.module';
-import { MoviDetailsComponent } from './movi-details/movi-details.component';
-import { MovieSearchComponent } from './movie-search/movie-search.component';
-import { AddHeaderInterceptor } from './http-interceptors/add-header.interceptor';
-import { LogResponseInterceptor } from './http-interceptors/log-response.interceptor';
-import { CacheInterceptor } from './http-interceptors/cache.interceptor';
-import { Err404Component } from './err404/err404.component';
-import { LikeComponent } from './movi-details/like-movie/like.component'; // flavien	
-import { SerieListComponent } from './serie-list/serie-list.component';
-import { SerieDetailsComponent } from './serie-details/serie-details.component';
-import { CarouselHolderComponentSerie } from './serie-list/carousel-holder/carousel-holder.component';
-import { FavouriteSerieComponent } from './serie-details/favourite-serie/favourite-serie.component';
-import { LikeSerieComponent } from './serie-details/like-serie/like-serie.component';
-import { FavouriteComponent } from './movi-details/favourite-movie/favourite.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { MovieSearchComponent } from './components/movie-search/movie-search.component';
+import { Err404Component } from './components/err404/err404.component';
+import { SigninComponent } from './components/authentication/signin/signin.component';
+import { SignupComponent } from './components/authentication/signup/signup.component';
+import { AddHeaderInterceptor } from './components/http-interceptors/add-header.interceptor';
+import { LogResponseInterceptor } from './components/http-interceptors/log-response.interceptor';
+import { CacheInterceptor } from './components/http-interceptors/cache.interceptor';
+import { MovieListComponent } from './components/movie/movie-list/movie-list.component';
+import { CarouselHolderComponent } from './components/movie/movie-list/carousel-holder/carousel-holder.component';
+import { CarouselHolderComponentSerie } from './components/serie/serie-list/carousel-holder/carousel-holder.component';
+import { MoviDetailsComponent } from './components/movie/movi-details/movi-details.component';
+import { LikeComponent } from './components/movie/movi-details/like-movie/like.component';
+import { FavouriteComponent } from './components/movie/movi-details/favourite-movie/favourite.component';
+import { SerieListComponent } from './components/serie/serie-list/serie-list.component';
+import { SerieDetailsComponent } from './components/serie/serie-details/serie-details.component';
+import { FavouriteSerieComponent } from './components/serie/serie-details/favourite-serie/favourite-serie.component';
+import { LikeSerieComponent } from './components/serie/serie-details/like-serie/like-serie.component';
 
 // FIREBASE
 import { AngularFireModule } from '@angular/fire';
@@ -40,8 +40,6 @@ import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from 'src/app/services/authentication.guard';
 import { AuthenticationService } from 'src/app/services/authentication.service';
-import { SigninComponent } from 'src/app/authentication/signin/signin.component';
-import { SignupComponent } from 'src/app/authentication/signup/signup.component';
 
 
 @NgModule({

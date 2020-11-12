@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Movie } from '../../models/movie';
-import { MoviesService } from '../../services/movies.service'; // flavien	
+import { Movie } from 'src/app/components/models/movie';
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-favourite',

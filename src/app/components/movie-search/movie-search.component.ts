@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Movie } from '../models/movie';
 import { Observable, Subject } from 'rxjs';
-import { MoviesService } from '../services/movies.service';
 import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Serie } from '../models/serie';
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-movie-search',

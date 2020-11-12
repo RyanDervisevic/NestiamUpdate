@@ -1,17 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Movie } from '../models/movie';
 import { ActivatedRoute } from '@angular/router';
+import { Movie } from '../../models/movie';
 
 @Component({
-  template: `
-  <div></div>
-  <app-carousel-holder  [movies]='moviesArray' [imageUrl]='imageBaseUrl'></app-carousel-holder>
-  `,
-  styles: [`
-  div{
-    height: 40px;
-  }
-  `]
+  selector: 'app-movie-list',
+  templateUrl: './movie-list.component.html',
+  styleUrls: ['./movie-list.component.css']
 })
 
 export class MovieListComponent implements OnInit {

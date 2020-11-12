@@ -4,9 +4,9 @@ import { Observable, throwError, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { LOCAL_STORAGE, StorageService } from 'ngx-webstorage-service'; // flavien	
 
-import { MovieDbResponse, SingleMovie, Video, Movie} from '../models/movie';
 import { Router } from '@angular/router';
-import { Serie, SerieDbResponse, SingleSerie } from '../models/serie';
+import { Movie, MovieDbResponse, SingleMovie, Video } from '../components/models/movie';
+import { Serie, SerieDbResponse, SingleSerie } from '../components/models/serie';
 
 
 @Injectable()

@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MoviesService } from '../services/movies.service';
 import { ActivatedRoute } from '@angular/router';
-import { Video } from '../models/movie';
 import { DomSanitizer } from '@angular/platform-browser';
-import { Serie, SingleSerie } from '../models/serie';
+import { MoviesService } from 'src/app/services/movies.service';
+import { Serie, SingleSerie, Video } from '../../models/serie';
 
 @Component({
   selector: 'app-serie-details',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Serie } from '../models/serie';
+import { Serie } from '../../models/serie';
 
 @Component({
   selector: 'app-serie-list',

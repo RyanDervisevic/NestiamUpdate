@@ -1,42 +1,43 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
-import { SingleSerie } from 'src/app/models/serie';
 import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
-  selector: 'app-like-serie',
-  templateUrl: './like-serie.component.html',
-  styleUrls: ['./like-serie.component.css']
+  selector: 'app-like',
+  templateUrl: './like.component.html',
+  styleUrls: ['./like.component.css']
 })
-export class LikeSerieComponent implements OnInit {
+
+
+export class LikeComponent implements OnInit {
   faHeart = faHeart;
   solidHeart = solidHeart;
   liked: boolean = false;
-  @Input() serieId: string;
-  @Input() serieLiked: boolean;
+  @Input() movieId: string;
+  @Input() movieLiked: boolean;
   favourites;
-  serie : SingleSerie;
+  movie;
   constructor(private movieService: MoviesService) {
    }
 
   ngOnInit() {
-    this.favourites = this.movieService.getFavouriteSerie();
+    this.favourites = this.movieService.getFavourite();
     }
 
   logClick() {
     this.liked = !this.liked;
     if (this.liked === true) {
-      this.movieService.addFavouriteSerie(this.serieId);
+      this.movieService.addFavourite(this.movieId);
     } else {
-      this.movieService.removeFavouriteSerie(this.serieId);
+      this.movieService.removeFavourite(this.movieId);
     }
   }
 
   woLike() {
-    if (this.serieLiked === false) {
+    if (this.movieLiked === false) {
       return false;
-    } else if (this.liked === true || this.serieLiked === true) {
+    } else if (this.liked === true || this.movieLiked === true) {
       return true;
     }
   }

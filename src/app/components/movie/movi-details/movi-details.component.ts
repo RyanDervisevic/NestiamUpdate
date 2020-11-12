@@ -1,8 +1,8 @@
 import {  OnInit, Component } from '@angular/core';
-import { MoviesService } from '../services/movies.service';
 import { ActivatedRoute } from '@angular/router';
-import { Movie, SingleMovie, Video } from '../models/movie';
 import { DomSanitizer } from '@angular/platform-browser';
+import { MoviesService } from 'src/app/services/movies.service';
+import { Movie, SingleMovie, Video } from '../../models/movie';
 
 @Component({
   templateUrl: './movi-details.component.html',

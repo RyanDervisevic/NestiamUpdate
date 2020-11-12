@@ -3,7 +3,7 @@ import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/r
 import { MoviesService } from './movies.service';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { Serie } from '../models/serie';
+import { Serie } from '../components/models/serie';
 
 @Injectable({
   providedIn: 'root'

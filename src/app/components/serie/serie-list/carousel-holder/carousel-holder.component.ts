@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { Serie } from 'src/app/models/serie';
+import { Serie } from 'src/app/components/models/serie';
 
 @Component({
   selector: 'app-carousel-holder-s',
